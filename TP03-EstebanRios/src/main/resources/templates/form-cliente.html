@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang = "es">
+	<head>
+		<meta charset="UTF-8">
+		<title>formulario</title>
+		<link rel="stylesheet" type="text/css" href="css/styles.css">
+	</head>
+	<body class = "cuerpo">
+		<header id = "header">
+			<h1>Programacion visual</h1>
+			<br>
+			<h1>CSS: Cascading Style Sheets </h1>
+			<br>
+			<br>
+			<nav class = "navegador">
+			<div class = "enlace">
+				<ul>
+					<li><a href="index">Introduccion sobre css</a></li>
+					<li><a href="index">Tipografía y diseño de texto</a></li>
+					<li><a href="index">Diseño responsive y flexibilidad visual</a></li> 
+					<li><a href="index">Animaciones y efectos visuales</a></li>
+					<li><a href="#">Formulario</a></li>
+				</ul>
+			</div>
+			</nav>
+		</header>
+		<main class = "main">
+			<h1>Formulario</h1>
+			<form class = "formu">
+				<label for = "dni" class = "label">DNI</label>
+				<input id = "dni" class="input" type ="number" min="1" placeholder = "Ingrese DNI" name = "dni" required></input>
+				<br>
+				<label for = "nombre" class = "label">Nombre</label>
+				<input id = "nombre" class="input" type ="text" placeholder = "Ingrese el nombre" name = "nombre" required></input>
+				<br>
+				<label for = "apellido" class = "label">Apellido</label>
+				<input id = "apellido" class="input" type ="text" placeholder = "Ingrese el apellido" name = "apellido" required></input>
+				<br>
+				<label for = "fechaNac" class = "label">Fecha de nacimiento</label>
+				<input id = "fechaNac" class="input" type ="date" placeholder = "Ingrese la fecha de nacimiento" name = "fechaNac" required></input>
+				<br>
+				<label for = "genero" class = "label">Genero</label>
+				<div >
+					<label for = "generoM" class = "label" >Masculino</label>
+					<input id = "generoM" class = "inputR" type ="radio" value = "Masculino" name = "genero"></input>
+					<label for = "generoF" class = "label">Femenino</label>
+					<input id = "generoF" type ="radio" value = "Femenino" name = "genero"></input>
+					<label for = "generoX" class = "label">X</label>
+					<input id = "generoX" type ="radio" value = "X" name = "genero"></input>
+					<br>
+				</div>
+				<label for = "correoElectronico" class = "label">Correo electrónico</label>
+				<input id = "correoElectronico" class = "input" type ="email" placeholder = "Ingrese el email" name = "correoElectronico" required></input>
+				<br>
+				<label for = "domicilio" class = "label">Domicilio</label>
+				<input id = "domicilio" class = "input" type ="text" placeholder = "Ingrese el domicilio" name = "domicilio" required></input>
+				<br>
+				
+				<label for = "provincia" class = "label">Provincia</label>
+				<div class = "containerS">
+				<select id = "provincia" class = "select">
+				<option value="Buenos Aires" >Buenos Aires</option>
+		            <option value="Catamarca">Catamarca</option>
+		            <option value="Chaco">Chaco</option>
+		            <option value="Chubut">Chubut</option>
+		            <option value="Ciudad Autónoma de Buenos Aires">Ciudad Autónoma de Buenos Aires</option>
+		            <option value="Córdoba">Córdoba</option>
+		            <option value="Corrientes">Corrientes</option>
+		            <option value="Entre Ríos">Entre Ríos</option>
+		            <option value="Formosa">Formosa</option>
+		            <option value="Jujuy">Jujuy</option>
+		            <option value="La Pampa">La Pampa</option>
+		            <option value="La Rioja">La Rioja</option>
+		            <option value="Mendoza">Mendoza</option>
+		            <option value="Misiones">Misiones</option>
+		            <option value="Neuquén">Neuquén</option>
+		            <option value="Río Negro">Río Negro</option>
+		            <option value="Salta">Salta</option>
+		            <option value="San Juan">San Juan</option>
+		            <option value="San Luis">San Luis</option>
+		            <option value="Santa Cruz">Santa Cruz</option>
+		            <option value="Santa Fe">Santa Fe</option>
+		            <option value="Santiago del Estero">Santiago del Estero</option>
+		            <option value="Tierra del Fuego">Tierra del Fuego</option>
+		            <option value="Tucumán">Tucumán</option>
+				</select>
+				</div>
+				<br>
+				
+				<label for = "numeroTelefono" class = "label">Número de teléfono celular </label>
+				<input id = "numeroTelefono" class = "input" type ="number" placeholder = "Ingrese el numero de telefono" name = "numeroTelefono" required></input>
+				<br>
+				<label class = "label"> Categorias de interes </label>
+				<div class = "containerS">
+					<label for = "interes" class = "label">Futbol</label>
+					<input id = "interes" class = "checkbox" type = "checkbox" name = "interes" value = "futbol"></input>
+					<label for = "interes" class = "label">Cocina</label>
+					<input id = "interes" class = "checkbox" type = "checkbox" name = "interes" value = "concina"></input>
+					<label for = "interes" class = "label">turismo</label>
+					<input id = "interes" class = "checkbox" type = "checkbox" name = "interes" value = "turismo"></input>
+					<label for = "interes" class = "label">tecnologia</label>
+					<input id = "interes" class = "checkbox" type = "checkbox" name = "interes" value = "tecnologia"></input>
+					<label for = "interes" class = "label">Arte y Cultura</label>
+					<input id = "interes" class = "checkbox" type = "checkbox" name = "interes" value = "arteyCultura"></input>
+					<label for = "interes" class = "label">Salud y Bienestar</label>
+					<input id = "interes" class = "checkbox" type = "checkbox" name = "interes" value = "saludBienestar"></input>
+					
+				</div>
+				
+				<label for = "sugerencia" class = "label">Sugerencias para la empresa</label>
+				<br>
+				<textarea id="sugerencia" class = "input" name="sugerencia" rows="4" cols="50"></textarea>
+				<br>
+				<label for = "contraseña" class = "label">Contraseña</label>
+				<input id = "contraseña" class = "input" type = "password" name = "contraseña" placeholder = "Ingrese la contraseña" maxlength = "10" min ="2"></input>
+				<br>
+				<label for = "contraseñaDeNuevo" class = "label">Confirme la contraseña</label>
+				<input id = "contraseñaDeNuevo" class = "input" type = "password" name = "contraseñaDeNuevo" placeholder = "Confirmar la contraseña" maxlength = "10" min ="2"></input>
+				<br>
+				<label for = "terminosCondiciones" class = "label">Acepto los términos y condiciones</label>
+				<input type="checkbox" class = "checkbox" id="terminosCondiciones" name="terminosCondiciones" required>
+				<br>
+				<label for = "informacion" class = "label">Acepto recibir información relativa a la empresa</label>
+				<input type="checkbox" class = "checkbox" id="informacion" name="informacion">
+				<br>
+				<input type="submit" class = "boton" id="cancelar" name="cancelar" placeholder = "Aceptar">
+				<input type="button" class = "boton" id="cancelar" name="cancelar" value = "Cancelar" >
+				
+				<label></label>
+			</form>
+		</main>
+		<footer class = "piedepaginas">
+			<div class = "enlacesF">
+	        <p>Correo electrónico: <a href="mailto:InformacionCSS@hotmail.com">InformacionCSS@hotmail.com</a></p>
+	        <a href="https://www.facebook.com/InformacionCSS" target="_blank">Facebook</a>
+	        <a href="https://twitter.com/InformacionCSS" target="_blank">Twitter</a>
+	        <a href="https://www.instagram.com/InformacionCSS" target="_blank">Instagram</a>
+	        </div>
+		</footer>
+	</body>
+</html>

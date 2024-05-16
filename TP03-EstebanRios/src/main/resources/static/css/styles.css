@@ -1,0 +1,244 @@
+@charset "UTF-8";
+
+#header{
+	background-color: #8F95A3;
+	padding: 10px;
+	justify-content: space-between;
+	display: flex;
+	box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);  
+	width : auto;  
+	height : 100px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	margin: 0 auto;
+}
+#header h1{
+	color: white;
+    font-size: 24px;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+}
+
+.navegador{
+	padding: 10px;
+	font-family: Arial, sans-serif;
+	
+}
+
+.navegador ul{
+	list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.enlace {
+	text-decoration: none;
+	width: auto;
+	height: auto;
+	color: white; 
+    text-decoration: none; 
+    padding: 10px 20px;
+}
+.h2{
+	font-size: 24px; 
+    font-weight: bold; 
+    color: #333; 
+    margin-top: 20px; 
+    margin-bottom: 10px; 
+}
+.h3{
+	font-size: 20px; 
+    font-weight: bold; 
+    color: #555; 
+    margin-top: 15px;
+    margin-bottom: 10px; 
+}
+.enlace a{
+	color: white;
+	text-decoration: none;
+}
+
+.enlace a:hover{
+	background-color: #788091;
+}
+
+.cuerpo{
+	background-color: #788091;
+  
+}
+
+.main{
+	background-color: #6E7687; 
+	padding: 10px;
+	margin: 10px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	flex: 1;
+}
+.seccion{
+	background-color: #848B9A; 
+    border: 1px solid #ddd; 
+    border-radius: 5px; 
+    margin-bottom: 20px;
+    padding: 20px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+}
+.parrafo{
+	font-size: 16px; 
+    line-height: 1.5; 
+    color: black; 
+    margin-bottom: 15px; 
+}
+.listaU{
+	list-style-type: disc;
+    margin-bottom: 15px;
+}
+.listaU li{
+	font-size: 14px; 
+    color: #333; 
+    margin-bottom: 5px;
+}
+.tabla{
+	width: 100%;
+    border-collapse: collapse; 
+}
+.tabla th{
+	background-color: #A5ABB6;
+    font-weight: bold; 
+    padding: 8px; 
+    text-align: left;
+    border-bottom: 2px solid #ddd; 
+}
+.tabla td{
+	padding: 8px;
+    border-bottom: 1px solid #ddd; 
+}
+
+.tabla tr:nthchild(odd){
+	background-color: #9AA0AC;
+}
+.side{
+	margin-top:10px ;
+	padding:10px ;
+	background-color: #6E7687;
+    border: 1px solid #ddd; 
+    border-radius: 5px; 
+    width: 300px;
+    height: 800px;
+}
+.side h2{
+	color: #333; 
+    font-size: 20px; 
+    margin-top: 0; 
+}
+.container{
+	 display: flex;
+}
+.enlaceA {
+	text-decoration: none;
+	width: auto;
+	height: auto;
+	color: black; 
+    text-decoration: none; 
+    padding: 10px 10px;
+}
+.enlaceA a{
+	color: black;
+	text-decoration: none;
+}
+.piedepaginas{
+	margin-top:10px ;
+	padding:10px ;
+	background-color: #6E7687;
+    border: 1px solid #ddd; 
+    border-radius: 5px; 
+}
+.enlacesF{
+	display: flex;
+	padding: 10px;
+	justify-content: space-between;
+	background-color: #848B9A; 
+	border: 1px solid #ddd; 
+    border-radius: 5px;
+	width: auto;
+	height: auto;
+	color: white; 
+    text-decoration: none; 
+}
+.enlacesF A{
+	color: white;
+	text-decoration: none;
+}
+.formu{
+	background-color: #848B9A; 
+    padding: 20px; 
+    border: 1px solid #ddd; 
+    border-radius: 5px; 
+    width: 600px; 
+    margin: 0 auto; 
+}
+.input{ 
+	background-color: #6E7687;
+	padding: 10px;
+	margin-bottom: 10px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	box-sizing:border-box;
+}
+.boton{
+	background-color: #6E7687;
+	color: white;
+	border: none;
+	padding: 10px 20px;
+	border-radius: 5px;
+	cursos: pointer;
+}
+.label{
+	font-size: 20px;
+	font-family: Arial, sans-serif;
+	
+}
+.select{
+	padding: 10px;
+  	border: 1px solid #ccc;
+ 	border-radius: 5px;
+	box-sizing: border-box;
+ 	background-color: #6E7687; 
+	color: #999; 
+	font-size: 16px; 
+}
+::placeholder {
+    color: #999;
+}
+.select::after {
+  content: "\25BC";
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+.containerS{
+	display: inline-block;
+ 	margin-bottom: 10px;
+}
+.checkbox{
+	width: 20px;
+    height: 20px;
+    border: 2px solid #6E7687;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+}
+.checkbox:checked{
+	background-color: #6E7687;
+}
+.checkbox:checked::before{
+	content: '\2713';
+    display: block;
+    text-align: center;
+    color: white;
+    font-size: 14px;
+    line-height: 20px; 
+}
+

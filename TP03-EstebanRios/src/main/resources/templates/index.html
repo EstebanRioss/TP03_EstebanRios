@@ -2,47 +2,43 @@
 <html lang="es">
 	<head>
 	<meta charset="UTF-8">
-	<title>Esteban Ezequiel Rios</title>
-	<style>
-        table {
-            width: 100%;
-            border-collapse: collapse;
-        }
-        th, td {
-            padding: 8px;
-            text-align: left;
-            border-bottom: 1px solid #ddd;
-        }
-        th {
-            background-color: #f2f2f5;
-        }
-    </style>
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<title>CSS</title>
 	</head>
-	<body>
-		<header>
+	<body class = "cuerpo">
+		<header id = "header">
+			<h1>Programacion Visual</h1>
+			<br>
 			<h1>CSS: Cascading Style Sheets </h1>
-			<nav>
+			<br>
+			<br>
+			<nav class = "navegador">
+			<div class = "enlace">
 				<ul>
 					<li><a href="#Inicio">Introduccion sobre css</a></li>
 					<li><a href="#texto">Tipografía y diseño de texto</a></li>
 					<li><a href="#responsive">Diseño responsive y flexibilidad visual</a></li> 
 					<li><a href="#animacion">Animaciones y efectos visuales</a></li>
+					<li><a href="form">Formulario</a></li>
 				</ul>
+			</div>
 			</nav>
 		</header>
+		<div class = "container">
+		<div class = "main">
 		<main>
-			<section id = "Inicio">
-				<h2>Introduccion sobre css</h2>
-				<p>Cascading Style Sheets (CSS) es un lenguaje esencial en el desarrollo web que permite controlar la presentación visual de las páginas HTML. A través de reglas simples que asignan estilos a elementos específicos, como colores, fuentes y diseños, CSS ofrece una separación clara entre la estructura del contenido y su apariencia visual.</p>
-				<p>Una de las características más destacadas de CSS es su capacidad para crear diseños flexibles y responsivos que se adaptan a diferentes dispositivos y tamaños de pantalla. Con herramientas como CSS Grid y Flexbox, los desarrolladores pueden crear diseños complejos de manera eficiente y garantizar una experiencia de usuario consistente en una variedad de dispositivos.</p>
-				<p>Además de su papel en el diseño visual, CSS también juega un papel crucial en la accesibilidad web y la optimización del rendimiento. Al garantizar una estructura semántica adecuada y un código optimizado, los desarrolladores pueden mejorar la accesibilidad y la eficiencia de sus proyectos, asegurando una experiencia de usuario óptima para todos los usuarios.</p>
+			<section id = "Inicio" class = "seccion">
+				<h2 class = "h2">Introduccion sobre css</h2>
+				<p class = "parrafo">Cascading Style Sheets (CSS) es un lenguaje esencial en el desarrollo web que permite controlar la presentación visual de las páginas HTML. A través de reglas simples que asignan estilos a elementos específicos, como colores, fuentes y diseños, CSS ofrece una separación clara entre la estructura del contenido y su apariencia visual.</p>
+				<p class = "parrafo">Una de las características más destacadas de CSS es su capacidad para crear diseños flexibles y responsivos que se adaptan a diferentes dispositivos y tamaños de pantalla. Con herramientas como CSS Grid y Flexbox, los desarrolladores pueden crear diseños complejos de manera eficiente y garantizar una experiencia de usuario consistente en una variedad de dispositivos.</p>
+				<p class = "parrafo">Además de su papel en el diseño visual, CSS también juega un papel crucial en la accesibilidad web y la optimización del rendimiento. Al garantizar una estructura semántica adecuada y un código optimizado, los desarrolladores pueden mejorar la accesibilidad y la eficiencia de sus proyectos, asegurando una experiencia de usuario óptima para todos los usuarios.</p>
 			</section>
-			<section id = "texto">
-				<h3>Tipografía y diseño de texto</h3>
-				<p>La tipografía y el diseño de texto son aspectos fundamentales del diseño web, ya que juegan un papel crucial en la legibilidad, la estética y la experiencia del usuario. La selección adecuada de fuentes y la aplicación de estilos de texto pueden influir significativamente en cómo se percibe y se interactúa con el contenido en línea.</p>
-				<p>La elección de fuentes apropiadas no solo se trata de seleccionar algo atractivo visualmente, sino también de considerar la legibilidad y la coherencia con la marca o el propósito del sitio web. Es importante encontrar un equilibrio entre la creatividad y la funcionalidad, asegurándose de que las fuentes elegidas sean fáciles de leer en diferentes dispositivos y tamaños de pantalla.</p>
-				<p>Los puntos claves a la hora de elegir la tipografia de texto son: </p>
-				<ul>
+			<section id = "texto" class = "seccion">
+				<h3 class = "h3">Tipografía y diseño de texto</h3>
+				<p class = "parrafo">La tipografía y el diseño de texto son aspectos fundamentales del diseño web, ya que juegan un papel crucial en la legibilidad, la estética y la experiencia del usuario. La selección adecuada de fuentes y la aplicación de estilos de texto pueden influir significativamente en cómo se percibe y se interactúa con el contenido en línea.</p>
+				<p class = "parrafo">La elección de fuentes apropiadas no solo se trata de seleccionar algo atractivo visualmente, sino también de considerar la legibilidad y la coherencia con la marca o el propósito del sitio web. Es importante encontrar un equilibrio entre la creatividad y la funcionalidad, asegurándose de que las fuentes elegidas sean fáciles de leer en diferentes dispositivos y tamaños de pantalla.</p>
+				<p class = "parrafo">Los puntos claves a la hora de elegir la tipografia de texto son: </p>
+				<ul class = "listaU">
 					<li>Propósito y audiencia</li>
 					<li>Legibilidad</li>
 					<li>Coherencia con la marca</li>
@@ -51,19 +47,19 @@
 					<li>Tendencias y estilos</li>
 				</ul>
 			</section>
-			<section id = "responsive">
-				<h2>Diseño responsive y flexibilidad visual</h2>
-				<p>El diseño responsive se centra en crear sitios web que se adapten de forma fluida a diferentes dispositivos y tamaños de pantalla. Utiliza técnicas como media queries para ajustar el diseño y el contenido según el espacio disponible, priorizando el contenido más importante para una experiencia de usuario consistente y efectiva.</p>
-				<p>Por otro lado, la flexibilidad visual implica crear diseños que fluyan armoniosamente en diversas situaciones y dispositivos. Va más allá del simple cambio de tamaño, considerando aspectos como la disposición, la proporción, el espaciado y la tipografía para mantener la coherencia visual en cualquier contexto de visualización.</p>
+			<section id = "responsive" class = "seccion">
+				<h2 class = "h2">Diseño responsive y flexibilidad visual</h2>
+				<p class = "parrafo">El diseño responsive se centra en crear sitios web que se adapten de forma fluida a diferentes dispositivos y tamaños de pantalla. Utiliza técnicas como media queries para ajustar el diseño y el contenido según el espacio disponible, priorizando el contenido más importante para una experiencia de usuario consistente y efectiva.</p>
+				<p class = "parrafo">Por otro lado, la flexibilidad visual implica crear diseños que fluyan armoniosamente en diversas situaciones y dispositivos. Va más allá del simple cambio de tamaño, considerando aspectos como la disposición, la proporción, el espaciado y la tipografía para mantener la coherencia visual en cualquier contexto de visualización.</p>
 				
 			</section>
-			<section id = "animacion">
-				<h3>Animaciones y efectos visuales</h3>
-				<p>Las animaciones y efectos visuales son herramientas poderosas para mejorar la interactividad y la experiencia del usuario en un sitio web. Estas técnicas pueden agregar dinamismo, interés visual y claridad a la interfaz, atrayendo la atención del usuario y guiándolo a través del contenido de manera efectiva.</p>
-				<p>Las animaciones pueden utilizarse para resaltar elementos importantes, proporcionar retroalimentación visual, y mejorar la comprensión del usuario sobre la navegación y la interacción. Los efectos visuales, como las transiciones suaves, las sombras, los degradados y las transformaciones, pueden agregar profundidad y realismo al diseño, creando una experiencia más inmersiva y atractiva.</p>
-				<p>Al implementar animaciones y efectos visuales, es importante tener en cuenta la sutileza y la coherencia con la marca y el propósito del sitio web. Demasiadas animaciones o efectos excesivamente llamativos pueden resultar abrumadores y distraer del contenido, mientras que una aplicación cuidadosa puede mejorar la usabilidad y la estética general del diseño.</p>
-				<p>A continuación, se muestra una tabla con ejemplos de animaciones y efectos visuales comunes en el diseño web:</p>
-				<table>
+			<section id = "animacion" class = "seccion">
+				<h3 class = "h3">Animaciones y efectos visuales</h3>
+				<p class = "parrafo">Las animaciones y efectos visuales son herramientas poderosas para mejorar la interactividad y la experiencia del usuario en un sitio web. Estas técnicas pueden agregar dinamismo, interés visual y claridad a la interfaz, atrayendo la atención del usuario y guiándolo a través del contenido de manera efectiva.</p>
+				<p class = "parrafo">Las animaciones pueden utilizarse para resaltar elementos importantes, proporcionar retroalimentación visual, y mejorar la comprensión del usuario sobre la navegación y la interacción. Los efectos visuales, como las transiciones suaves, las sombras, los degradados y las transformaciones, pueden agregar profundidad y realismo al diseño, creando una experiencia más inmersiva y atractiva.</p>
+				<p class = "parrafo">Al implementar animaciones y efectos visuales, es importante tener en cuenta la sutileza y la coherencia con la marca y el propósito del sitio web. Demasiadas animaciones o efectos excesivamente llamativos pueden resultar abrumadores y distraer del contenido, mientras que una aplicación cuidadosa puede mejorar la usabilidad y la estética general del diseño.</p>
+				<p class = "parrafo">A continuación, se muestra una tabla con ejemplos de animaciones y efectos visuales comunes en el diseño web:</p>
+				<table class = "tabla">
 				       <tr>
 				          <th>Tipo de Efecto</th>
 				          <th>Descripción</th>
@@ -107,24 +103,32 @@
 		    	</table>
 			</section>
 		</main>
-		<aside>
+		
+		</div>
+		<aside class = "side">
+			
 			<h2>Herramientas y Recursos CSS</h2>
+	        <div class = "enlaceA">
 	        <ul>
+	       	    
 	            <li><a href="https://www.colorhunt.co/" target="_blank">Color Hunt</a> - Una colección de paletas de colores hermosas para inspirarte en tu diseño.</li>
 	            <li><a href="https://css-tricks.com/" target="_blank">CSS-Tricks</a> - Un sitio web que ofrece tutoriales, guías y trucos sobre CSS y diseño web en general.</li>
 	            <li><a href="https://fontawesome.com/" target="_blank">Font Awesome</a> - Una biblioteca de iconos vectoriales que se pueden utilizar fácilmente en tus proyectos CSS.</li>
 	            <li><a href="https://fonts.google.com/" target="_blank">Google Fonts</a> - Una colección de fuentes web gratuitas que puedes integrar fácilmente en tu sitio web.</li>
 	            <li><a href="https://cssgradient.io/" target="_blank">CSS Gradient</a> - Un generador de gradientes CSS que te permite crear gradientes personalizados con facilidad.</li>
+	        	
 	        </ul>
+	        </div>
 	        <img src="/img/CSS.png" alt = "Recursos css" width="200">
 		</aside>
-		<footer>
-			<p>Contacto:</p>
+		</div>
+		<footer class = "piedepaginas">
+			<div class = "enlacesF">
 	        <p>Correo electrónico: <a href="mailto:InformacionCSS@hotmail.com">InformacionCSS@hotmail.com</a></p>
-	        <p>Redes Sociales:</p>
 	        <a href="https://www.facebook.com/InformacionCSS" target="_blank">Facebook</a>
 	        <a href="https://twitter.com/InformacionCSS" target="_blank">Twitter</a>
 	        <a href="https://www.instagram.com/InformacionCSS" target="_blank">Instagram</a>
+	        </div>
 		</footer>
 	</body>
 
